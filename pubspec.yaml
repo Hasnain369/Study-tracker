@@ -11,17 +11,19 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.5.1
-  flutter_native_splash:
   sqflite: ^2.3.3
   path: ^1.9.0
   fl_chart: ^0.68.0
   flutter_colorpicker: ^1.0.3
   intl: ^0.19.0
- 
-flutter_native_splash:
-  color: "#5C6BC0"          # your indigo color — shows instantly on launch
+  flutter_launcher_icons: 
+
+flutter_launcher_icons:
   android: true
-  ios: false   
+  ios: true
+  image_path: "icons/app_icon.png"
+  
+ 
 
 dev_dependencies:
   flutter_test:
@@ -29,10 +31,6 @@ dev_dependencies:
   flutter_lints: ^3.0.0
   flutter_launcher_icons: ^0.13.1
 
-flutter_icons:
-  image_path: "icons/app_icon.png"
-  android: true
-  ios: true
- 
+
 flutter:
   uses-material-design: true

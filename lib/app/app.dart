@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:study_tracker/app/navigation/bottomNav.dart';
 import 'package:study_tracker/shared/provider/theme_provider.dart';
-import '../features/splash/splash_screen.dart';
 
 class StudyTrackerApp extends ConsumerWidget {
   const StudyTrackerApp({super.key});
@@ -11,13 +11,12 @@ class StudyTrackerApp extends ConsumerWidget {
     final themeMode = ref.watch(themeProvider);
 
     return MaterialApp(
-      title: 'Study Tracker',
-      debugShowCheckedModeBanner: false,
-      themeMode: themeMode,
-      theme: _lightTheme(),
-      darkTheme: _darkTheme(),
-      home: const SplashScreen(), // 👈 changed from BottomNav to SplashScreen
-    );
+        title: 'Study Tracker',
+        debugShowCheckedModeBanner: false,
+        themeMode: themeMode,
+        theme: _lightTheme(),
+        darkTheme: _darkTheme(),
+        home: BottomNav());
   }
 
   ThemeData _lightTheme() {

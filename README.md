@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # study_tracker
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Study-tracker
+This is a study tracker app built using flutter + riverpod + sqflite
+>>>>>>> 6cb8dbff1bd55ced9649dd2318dbc2916b86d534
